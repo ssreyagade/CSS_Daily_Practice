@@ -1,0 +1,180 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Trebuchet MS", sans-serif;
+  color: #fff;
+  scroll-behavior: smooth;
+  background: linear-gradient(to bottom right, #10021f, #05032a, #0ca3ad);
+}
+
+/* ===== HEADER ===== */
+/* ===== HEADER ===== */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  padding: 10px 0;
+  z-index: 10;
+  border-bottom: 2px solid #4fc3f7;
+}
+
+/* Flex container for logo + nav */
+.navbar {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ===== LOGO / MAIN HEADING ===== */
+.logo {
+  color: #4fc3f7;
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 6px black;
+}
+
+/* ===== NAVIGATION LINKS ===== */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 35px;
+}
+
+nav a {
+  color: #82e9de;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffffff;
+}
+
+/* ===== PARENT CONTAINER ===== */
+.parent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #4fc3f7;
+}
+
+/* ===== EACH SECTION ===== */
+.child {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px; /* space for header */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  border: 2px solid #4fc3f7;
+}
+
+/* ===== INFO BOX (now includes heading, text, and image) ===== */
+.info-box {
+  width: 85%;
+  max-width: 1100px;
+  background: rgba(0, 0, 0, 0.55);
+  border: 2px solid #4fc3f7;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 0 20px rgba(79, 195, 247, 0.5);
+  text-align: center;
+  border: 2px solid #4fc3f7;
+}
+
+/* ===== SECTION HEADING ===== */
+.info-box h1 {
+  font-size: 2.5rem;
+  margin-bottom: 25px;
+  color: #4fc3f7;
+  text-shadow: 2px 2px 8px black;
+  border-bottom: 1px solid #4fc3f7;
+  padding-bottom: 10px;
+  border: 2px solid #4fc3f7;
+}
+
+/* ===== FLEX CONTENT INSIDE INFO BOX ===== */
+.content {
+  display: flex;
+  border: 2px solid #4fc3f7;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 20px;
+}
+
+/* ===== TEXT BOX ===== */
+.text-box {
+  flex: 1;
+  border: 2px solid #4fc3f7;
+  min-width: 280px;
+  padding: 20px;
+  text-align: justify;
+  line-height: 1.6;
+  font-size: 1rem;
+  color: #e0f7fa;
+}
+
+/* ===== IMAGE BOX ===== */
+.image-box {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.image-box img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(79, 195, 247, 0.6);
+  transition: transform 0.4s ease;
+}
+
+.image-box img:hover {
+  transform: scale(1.05);
+}
+
+/* ===== BACKGROUND IMAGES ===== */
+#mountains {
+  background-image: url("images/ooty2.avif");
+}
+
+#beaches {
+  background-image: url("images/harishchandragad3.webp");
+}
+
+#deserts {
+  background-image: url("images/kalsubai2.jpg");
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .info-box h1 {
+    font-size: 1.8rem;
+  }
+
+  .text-box {
+    text-align: center;
+  }
+}
