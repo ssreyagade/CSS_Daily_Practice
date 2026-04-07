@@ -1,0 +1,149 @@
+.container1 {
+  width: 800px;
+  display: flex;
+  margin: auto;
+  border: solid 2px black;
+}
+.cards {
+  padding: 20px;
+  margin: 10px;
+  background-color: lightblue;
+}
+.navbar {
+  height: 60px;
+  border: 2px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+.logo {
+  width: 20%;
+  border: 2px solid blue;
+}
+.menu {
+  border: green solid 2px;
+  width: 70%;
+}
+.container2 {
+  display: flex;
+}
+.boxes {
+  gap: 20px;
+  border: 2px solid;
+  height: 100px;
+  width: 100px;
+}
+.container4 {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid red;
+  height: 500px;
+}
+.boxes5 {
+  margin-bottom: 10px;
+  border: 2px solid yellow;
+  height: 80px;
+  width: 80px;
+}
+.container5 {
+  width: 300px;
+  padding: 15px;
+  border-radius: 10px;
+}
+.container5 {
+  width: 800px;
+  height: 300px;
+  margin: auto;
+  border: solid 2px;
+}
+.container5 > nav {
+  height: 50px;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  margin: 2px;
+}
+.innercontainer5 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.innercontainer5 > section {
+  border: solid black 2px;
+  height: 200px;
+  width: 360px;
+}
+.container6 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  border: 2px solid red;
+}
+.container6 > div {
+  border: 2px solid black;
+  width: 50px;
+  height: 50px;
+}
+.container7 {
+  border: 2px solid black;
+  display: flex;
+  width: 500px;
+  height: 120px;
+  margin: auto;
+
+  justify-content: right;
+}
+.container7 > button {
+  height: 100px;
+  width: 100px;
+}
+.price {
+  width: 500px;
+  height: 500px;
+  border: solid 2px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.prices-box {
+  width: 150px;
+  height: 80px;
+  border: solid 2px;
+}
+.container9 {
+  height: 400px;
+  width: 500px;
+  border: 2px solid;
+  display: flex;
+  align-items: end;
+}
+.container9 > div {
+  height: 50px;
+  border: 2px solid red;
+  width: 50px;
+}
+.container10 {
+  height: 500px;
+  width: 20%;
+  align-items: center;
+  display: flex;
+  border: blue 2px solid;
+}
+.container10 > section {
+  border: 2px solid green;
+  width: 50px;
+  height: 20px;
+}
+.container11 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  border: 2px orange solid;
+}
+.product-cards {
+  height: 40px;
+  width: 200px;
+  border: pink 3px solid;
+}
