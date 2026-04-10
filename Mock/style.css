@@ -1,0 +1,136 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.sidebar {
+  background-color: black;
+  display: block;
+  position: sticky;
+  width: 200px;
+  height: 1500px;
+}
+.sidebar > a {
+  display: block;
+  background-color: black;
+  width: 190px;
+  padding: 20px;
+  color: white;
+  text-decoration: none;
+}
+.sidebar2 {
+  display: flex;
+  background-color: black;
+  width: 190px;
+  padding: 20px;
+  color: white;
+  padding: 10px;
+}
+.sidebar2 > p {
+  padding: 10px;
+}
+nav {
+  height: 100px;
+}
+.search {
+  width: 95vw;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 60px;
+  background-color: black;
+}
+.container {
+  display: flex;
+}
+.search > input {
+  height: 30px;
+  width: 40%;
+}
+.main-nav {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-around;
+}
+.box {
+  border: solid 2px white;
+  height: 20px;
+  width: 20px;
+  margin: 10px;
+}
+.image {
+  border-radius: 50%;
+  border: white solid 2px;
+  height: 30px;
+  width: 30px;
+  margin: 10px;
+}
+.buttons {
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  width: 95vw;
+  background-color: black;
+}
+.buttons > button {
+  background-color: black;
+  color: white;
+  width: 100px;
+  height: 40px;
+  justify-content: space-around;
+}
+.content {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.952);
+  width: 100%;
+  height: 70vh;
+}
+h2 {
+  margin: 10px;
+  font-size: 40px;
+}
+.quick {
+  display: flex;
+  padding: 10px;
+}
+.grids {
+  border: 2px solid white;
+  width: 50px;
+  height: 50px;
+}
+.quick > p {
+  margin: 10px;
+  padding: 10px;
+}
+.new-releases {
+  border: 2px solid yellow;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.952);
+  height: 888px;
+  width: 95vw;
+  background-size: 900px;
+}
+.releasepics {
+  border: white 2px solid;
+  width: 150px;
+  height: 200px;
+  margin: 50px;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.new-content {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+.new-content > p {
+  margin-left: 50px;
+}
+h3 {
+  background-color: black;
+  color: white;
+  margin: 0;
+}
