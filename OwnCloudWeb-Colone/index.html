@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ownCloud Detailed View</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="left-nav">
+        <i class="fas fa-bars menu-icon"></i>
+        <span class="app-name">Files</span>
+      </div>
+      <div class="logo-container">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/1/10/OwnCloud_Logo.svg"
+          alt="ownCloud Logo"
+          class="logo"
+        />
+      </div>
+      <div class="right-nav">
+        <i class="fas fa-search"></i>
+        <span class="admin-label">admin <i class="fas fa-caret-down"></i></span>
+      </div>
+    </header>
+
+    <div class="main-container">
+      <aside class="sidebar">
+        <nav>
+          <div class="nav-item active">
+            <i class="fas fa-folder"></i> All files
+          </div>
+          <div class="nav-item"><i class="far fa-star"></i> Favorites</div>
+          <div class="nav-item">
+            <i class="fas fa-share-alt"></i> Shared with you
+          </div>
+          <div class="nav-item">
+            <i class="fas fa-share-alt"></i> Shared with others
+          </div>
+          <div class="nav-item"><i class="fas fa-link"></i> Shared by link</div>
+          <div class="nav-item"><i class="fas fa-tags"></i> Tags</div>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <div class="breadcrumb-bar">
+          <div class="breadcrumb">
+            <i class="fas fa-folder"></i>
+            <span>All files</span>
+          </div>
+          <button class="add-btn"><i class="fas fa-plus"></i></button>
+        </div>
+
+        <table class="file-table">
+          <thead>
+            <tr>
+              <th class="col-check"><input type="checkbox" /></th>
+              <th class="col-name">Name <i class="fas fa-caret-down"></i></th>
+              <th class="col-size">Size</th>
+              <th class="col-mod">Modified</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><input type="checkbox" /></td>
+              <td><i class="fas fa-folder folder-icon"></i> Documents</td>
+              <td class="text-muted">35 KB</td>
+              <td class="text-muted">18 minutes ago</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" /></td>
+              <td>
+                <i class="fas fa-folder folder-icon"></i> Learn more about
+                ownCloud
+              </td>
+              <td class="text-muted">3.5 MB</td>
+              <td class="text-muted">18 minutes ago</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" /></td>
+              <td><i class="fas fa-folder folder-icon"></i> Photos</td>
+              <td class="text-muted">988 KB</td>
+              <td class="text-muted">18 minutes ago</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" /></td>
+              <td><i class="far fa-file-alt file-icon"></i> EXAMPLE.txt</td>
+              <td class="text-muted">< 1 KB</td>
+              <td class="text-muted">8 minutes ago</td>
+            </tr>
+            <tr class="selected-row">
+              <td><input type="checkbox" checked /></td>
+              <td>
+                <div class="file-name-cell">
+                  <div class="screenshot-icon">
+                    <i class="fas fa-align-left"></i>
+                  </div>
+                  Screenshot 2026-04-01 150535.png
+                  <span class="shared-tag"
+                    ><i class="fas fa-share-alt"></i> Shared</span
+                  >
+                </div>
+              </td>
+              <td class="text-muted">128 KB</td>
+              <td class="text-muted">20 minutes ago</td>
+            </tr>
+          </tbody>
+        </table>
+      </main>
+
+      <aside class="details-sidebar">
+        <div class="preview-box">
+          <img src="111.png" alt="Preview" class="preview-img" />
+          <div class="preview-overlay"></div>
+        </div>
+
+        <div class="details-header">
+          <h3>Screenshot 2026-04-01 150535.png <i class="fas fa-link"></i></h3>
+          <p class="meta-info">
+            <i class="far fa-star"></i> 128 KB, 20 minutes ago
+          </p>
+        </div>
+
+        <div class="tabs">
+          <div>Activities</div>
+          <div>Comments</div>
+          <div class="tab-active">Sharing</div>
+          <div>Tags</div>
+        </div>
+        <div class="sub-tab">Versions</div>
+
+        <div class="sharing-section">
+          <div class="sharing-toggle">
+            <span class="active-toggle">User and Groups</span>
+            <span>Public Links</span>
+          </div>
+          <input
+            type="text"
+            class="share-input"
+            placeholder="Share with users, groups or federated users..."
+          />
+
+          <div class="shared-user">
+            <div class="avatar">S</div>
+            <span class="user-name">shreya</span>
+            <div class="user-controls">
+              <i class="fas fa-cog"></i>
+              <i class="fas fa-trash"></i>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </body>
+</html>
